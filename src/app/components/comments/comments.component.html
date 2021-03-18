@@ -1,0 +1,21 @@
+<div class="header-title">
+    Comments
+
+</div>
+<div>
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>EMAIL</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <tr *ngFor="let comment of comments | slice:0:5;">
+          <td>{{comment.id}}</td>
+          <td>{{comment.name}}</td>
+          <td>{{comment.email}}</td>
+          <td>{{comment.body}}</td>
+        </tr>
+      </table>
+
+</div>
